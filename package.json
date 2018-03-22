@@ -1,0 +1,17 @@
+{
+  "name": "littletools",
+  "version": "0.1.0",
+  "description": "小工具包",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tool"
+  ],
+  "dependencies": {
+    "yamljs": "^0.2.8"
+  },
+  "author": "zly",
+  "license": "ISC"
+}

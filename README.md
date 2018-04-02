@@ -9,6 +9,7 @@ tools.matchString(string,reference); //模糊匹配字符串
 tools.loadYaml(file); //加载yaml文件为对象
 tools.randomString(length); //生成指定长度到随机字符串，数字+小写字母组合
 tools.readConfig(option); //读取配置文件
+tools.mergeObject(target,...sources); //合并对象
 ```
 
 express 中间件

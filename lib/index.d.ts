@@ -1,5 +1,3 @@
-/// <reference types="node" />
-
 import { Request, Response, NextFunction } from 'express';
 
 
@@ -11,7 +9,7 @@ declare namespace littletools{
         matchString(strings: string, reference: string): boolean;
         randomString(length: number): string;
         readConfig(option: ConfigOption): any;
-        mergeObject(target: any, sources: any[]): any;
+        mergeObject(target: any, sources: any[]): void;
         loadYaml(filePath: string): any;
     }
 

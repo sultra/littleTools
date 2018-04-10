@@ -1,21 +1,12 @@
 import { Request, Response, NextFunction } from 'express';
 
-
-
-export =littletools;
-
-declare namespace littletools{
-    interface tools {
-        matchString(strings: string, reference: string): boolean;
-        randomString(length: number): string;
-        readConfig(option: ConfigOption): any;
-        mergeObject(target: any, sources: any[]): void;
-        loadYaml(filePath: string): any;
-    }
-
-    interface expressMW {
-        requestAccept(data: any, request: Request, response: Response, next: NextFunction): void;
-    }
+export declare namespace tools{
+    function matchString(strings: string, reference: string): boolean;
+    function randomString(length: number): string;
+    function readConfig(option: ConfigOption): any;
+    function mergeObject(target: any, sources: any[]): void;
+    function loadYaml(filePath: string): any;
+   
 
     interface ConfigOption {
         fileType: string;
@@ -24,3 +15,6 @@ declare namespace littletools{
     }
 }
 
+export declare namespace expressMW {
+    function requestAccept(data: any, request: Request, response: Response, next: NextFunction): void;
+}

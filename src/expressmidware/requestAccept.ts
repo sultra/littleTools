@@ -3,7 +3,7 @@ import { Request, Response, NextFunction} from 'express';
 /*处理express request 头信息中  Accept属性，对不同的内容做出不同的格式相应，
 *默认 application/json
 */
-export default function viii (data:any,request:Request,response:Response,next:NextFunction):void{
+export default (data:any,request:Request,response:Response,next:NextFunction):void=>{
     if (data instanceof Error) {
         next(data);
         return;

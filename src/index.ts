@@ -1,10 +1,7 @@
 import functional  from "./functional";
-import {responseAccordingAccept} from "./expressmidware";
+import responseAccordingAccept from "./expressmidware/requestAccept";
 
-const expressmidware:any={
-    responseAccordingAccept
-}
 
-export { functional, expressmidware};
+export { functional, responseAccordingAccept};
 
 

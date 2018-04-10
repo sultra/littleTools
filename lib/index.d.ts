@@ -6,15 +6,13 @@ export declare namespace tools{
     function readConfig(option: ConfigOption): any;
     function mergeObject(target: any, sources: any[]): void;
     function loadYaml(filePath: string): any;
-   
-
-    interface ConfigOption {
-        fileType: string;
-        configPath: string;
-        defaultFileName: string;
-    }
+}
+export interface ConfigOption {
+    fileType: string;
+    configPath: string;
+    defaultFileName: string;
 }
 
-export declare namespace expressMW {
-    function requestAccept(data: any, request: Request, response: Response, next: NextFunction): void;
+export declare namespace expressMidware {
+    function responseAccordingAccept(data: any, request: Request, response: Response, next: NextFunction): void;
 }

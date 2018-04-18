@@ -15,4 +15,5 @@ export interface ConfigOption {
 
 export declare namespace expressMidware {
     function responseAccordingAccept(data: any, request: Request, response: Response, next: NextFunction): void;
+    function responseErrorAccordingAccept(error: Error, request: Request, response: Response, next: NextFunction): void;
 }

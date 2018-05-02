@@ -14,12 +14,17 @@ tools.mergeObject(target,...sources); //合并对象
 
 express 中间件
 ``` javaScript
-const mw=require('littleTools').express;
+const mw=require('littleTools').expressMidware;
 /*
 处理request header中accept属性相应的数据格式，默认application/json，
 如果有使用全局错误处理中间件，请放在错误处理之前
 */
-app.use(mw.requestAccept);
+app.use(mw.responseAccordingAccept);
+
+/**
+ * 处理request header中accept属性相应的数据格式，默认application/json，当返回错误时使用
+ */
+app.use(mw.responseErrorAccordingAccept);
 ```
 
 
